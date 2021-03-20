@@ -3,7 +3,7 @@ Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
 
 goto my pateon for the osrs cow weighted file: https://www.patreon.com/user?u=52548237 
 
-and see full video tutorial: https://youtu.be/gFXxsb1Kk1s
+and see full video tutorial: https://youtu.be/X3snnwzJfEw
 
 Check if your gpu will work: https://developer.nvidia.com/cuda-gpus and use the cuda for your model and the latest cudnn for the cuda version.
 
