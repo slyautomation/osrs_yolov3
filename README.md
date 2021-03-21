@@ -1,6 +1,17 @@
 # osrs_yolov3
 Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
 
+Quick Start
+Download YOLOv3 weights from YOLO website. Run in Pycharm Terminal: 
+
+![image](https://user-images.githubusercontent.com/81003470/111890820-5ea04080-8a41-11eb-8fea-daf0a551bf07.png)
+
+https://pjreddie.com/media/files/yolov3.weights ----- save this in 'model_data' directory
+
+Convert the Darknet YOLO model to a Keras model.
+
+type in terminal: convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
+
 goto my pateon for the osrs cow weighted file: https://www.patreon.com/user?u=52548237 
 
 and see full video tutorial: https://youtu.be/X3snnwzJfEw
