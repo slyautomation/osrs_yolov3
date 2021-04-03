@@ -12,6 +12,8 @@ Convert the Darknet YOLO model to a Keras model.
 
 type in terminal: convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
 
+type pip install -r requirements
+
 goto my pateon for the osrs cow weighted file: https://www.patreon.com/user?u=52548237 
 
 and see full video tutorial: https://youtu.be/X3snnwzJfEw
