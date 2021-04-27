@@ -14,7 +14,7 @@ type in terminal: convert.py -w model_data/yolov3.cfg model_data/yolov3.weights 
 
 type pip install -r requirements
 
-goto my pateon for the osrs cow weighted file: https://www.patreon.com/user?u=52548237 
+goto Google drive for large files and specifically the osrs cow and goblin weighted file: https://drive.google.com/folderview?id=1P6GlRSMuuaSPfD2IUA7grLTu4nEgwN8D
 
 and see full video tutorial: https://youtu.be/X3snnwzJfEw
 
