@@ -2,7 +2,9 @@
 Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
 
 ![Alt Text](https://thumbs.gfycat.com/JoyfulLastingBluetickcoonhound-size_restricted.gif)
+
 Quick Start
+
 Download YOLOv3 weights from YOLO website. Run in Pycharm Terminal: 
 
 ![image](https://user-images.githubusercontent.com/81003470/111890820-5ea04080-8a41-11eb-8fea-daf0a551bf07.png)
