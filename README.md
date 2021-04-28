@@ -1,7 +1,8 @@
 # osrs_yolov3
 Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
 
-![Alt Text](https://thumbs.gfycat.com/JoyfulLastingBluetickcoonhound-size_restricted.gif)
+![Alt Text](https://thumbs.gfycat.com/JoyfulLastingBluetickcoonhound-size_restricted.gif) ![image](https://user-images.githubusercontent.com/81003470/116421155-ef104300-a881-11eb-930d-56b4b93511fd.png)
+
 
 Quick Start
 
