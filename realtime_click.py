@@ -235,7 +235,7 @@ def SHOWMSS_screen(p_output):
             print(percent)
             # print(classes)
             shoot_time = time.time()
-        if cv2.waitKey(25) & 0xFF == ord("q"):
+        if cv2.waitKey(1) & 0xFF == ord("q"):
             cv2.destroyAllWindows()
             return
         fps += 1
