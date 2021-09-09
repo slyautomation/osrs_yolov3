@@ -303,7 +303,7 @@ def SHOWMSS_screen(p_output):
                 mid_y = ((coords[0] + coords[2]) / 2) + 40
                 click_attack(mid_x, mid_y)
                 shoot_time = time.time()
-        if cv2.waitKey(25) & 0xFF == ord("q"):
+        if cv2.waitKey(1) & 0xFF == ord("q"):
             cv2.destroyAllWindows()
             return
         fps += 1
