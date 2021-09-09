@@ -3,6 +3,10 @@ Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
 
 ![Alt Text](https://thumbs.gfycat.com/JoyfulLastingBluetickcoonhound-size_restricted.gif) ![image](https://user-images.githubusercontent.com/81003470/116421155-ef104300-a881-11eb-930d-56b4b93511fd.png)
 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7085 (Average: 12 FPS)
+
+![ezgif-7-7bcf90e20cc2](https://user-images.githubusercontent.com/81003470/132772257-80ac3835-7b7b-4f30-9ba5-91f7999506b5.gif)
+
 
 Quick Start
 
