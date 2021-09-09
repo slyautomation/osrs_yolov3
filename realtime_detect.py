@@ -227,7 +227,7 @@ def SHOWMSS_screen(p_output):
         r_image, ObjectsList = yolo.detect_image(img)
 
         cv2.imshow("YOLO v3", r_image)
-        if cv2.waitKey(25) & 0xFF == ord("q"):
+        if cv2.waitKey(1) & 0xFF == ord("q"):
             cv2.destroyAllWindows()
             return
         fps += 1
