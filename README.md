@@ -18,7 +18,7 @@ https://pjreddie.com/media/files/yolov3.weights ----- save this in 'model_data' 
 
 Convert the Darknet YOLO model to a Keras model.
 
-type in terminal: convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
+type in terminal: python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
 
 type pip install -r requirements
 
