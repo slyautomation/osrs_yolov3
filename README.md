@@ -40,6 +40,6 @@ tesseract-ocr = https://sourceforge.net/projects/tesseract-ocr-alt/files/tessera
 
 Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
 
-##Trouble Shooting:
+## Trouble Shooting:
 
 change tensorflow_backend.py line 95 to tf.compat.v1.reset_default_graph()
