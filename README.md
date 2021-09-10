@@ -12,7 +12,6 @@ Quick Start
 
 Download YOLOv3 weights from YOLO website. Run in Pycharm Terminal: 
 
-![image](https://user-images.githubusercontent.com/81003470/111890820-5ea04080-8a41-11eb-8fea-daf0a551bf07.png)
 
 https://pjreddie.com/media/files/yolov3.weights ----- save this in 'model_data' directory
 
@@ -20,9 +19,7 @@ Convert the Darknet YOLO model to a Keras model.
 
 type in terminal: python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
 
-
-![image](https://user-images.githubusercontent.com/81003470/132840706-870e98b8-6dac-429e-9f58-efc734bfec36.png)
-
+![image](https://user-images.githubusercontent.com/81003470/111890820-5ea04080-8a41-11eb-8fea-daf0a551bf07.png)
 
 type pip install -r requirements
 
