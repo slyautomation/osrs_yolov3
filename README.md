@@ -45,3 +45,4 @@ Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
 change tensorflow_backend.py line 95 to tf.compat.v1.reset_default_graph()
 change tensorflow_backend.py line 98 to phase = tf.compat.v1.placeholder_with_default(False,
 change tensorflow_backend.py line 102 to _GRAPH_LEARNING_PHASES[tf.compat.v1.get_default_graph()] = phase
+change tensorflow_backend.py line 74 graph = tf.compat.v1.get_default_graph()
