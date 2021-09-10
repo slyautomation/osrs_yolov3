@@ -18,7 +18,7 @@ from yolo3.utils import get_random_data
 def _main():
     annotation_path = 'weighted_files/4_CLASS_test.txt'
     log_dir = 'logs/001/'
-    classes_path = 'weighted_files/goblin_CLASS_test_classes.txt'
+    classes_path = 'weighted_files/4_CLASS_test_classes.txt'
     anchors_path = 'model_data/yolo_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
