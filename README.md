@@ -39,3 +39,7 @@ labelImg = https://tzutalin.github.io/labelImg/
 tesseract-ocr = https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-setup-3.02.02.exe/download
 
 Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
+
+##Trouble Shooting:
+
+change tensorflow_backend.py line 95 to tf.compat.v1.reset_default_graph()
