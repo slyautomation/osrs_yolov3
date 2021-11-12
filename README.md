@@ -52,3 +52,7 @@ Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
 add image and xml files to folder OID//Dataset//train//name of class ***** IMAGES MUST BE IN JPG FORMAT (use png_jpg to convert png files to jpg files) *******
 
 run voc_to_yolov3.py - this will create the images class path config file and the classes list config file 
+
+https://user-images.githubusercontent.com/81003470/141400168-e0bb826b-a7e4-46a4-9f09-1a3cb0a44dcd.mp4
+
+
