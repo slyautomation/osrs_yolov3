@@ -49,5 +49,6 @@ Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
 
 ## Trouble Shooting:
 ### Images and XML files for object detection
-add image and xml files to folder OID//Dataset//train//name of class ***** IMAGES MUST BE IN JPG FORMAT *******
+add image and xml files to folder OID//Dataset//train//name of class ***** IMAGES MUST BE IN JPG FORMAT (use png_jpg to convert png files to jpg files) *******
+
 run voc_to_yolov3.py - this will create the images class path config file and the classes list config file 
