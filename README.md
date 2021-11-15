@@ -8,7 +8,7 @@ name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7085 (Avera
  ![image](https://user-images.githubusercontent.com/81003470/116421155-ef104300-a881-11eb-930d-56b4b93511fd.png)
 
 
-Quick Start
+# Quick Start
 
 Download YOLOv3 weights from YOLO website. Run in Pycharm Terminal: 
 
