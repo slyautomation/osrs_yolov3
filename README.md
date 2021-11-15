@@ -49,9 +49,9 @@ Credit to: https://github.com/pythonlessons/YOLOv3-object-detection-tutorial
 
 ## Trouble Shooting:
 ### Images and XML files for object detection
-example unzip files: cows.z01 , cows.z02 , cows.z03
+example unzip files in directory OID/Dataset/train/cow/: cows.z01 , cows.z02 , cows.z03
 
-add image and xml files to folder OID//Dataset//train//name of class 
+add image and xml files to folder OID//Dataset//train//name of class **** Add folder to train with the name of each class 
 
 ***** IMAGES MUST BE IN JPG FORMAT (use png_jpg to convert png files to jpg files) *******
 
