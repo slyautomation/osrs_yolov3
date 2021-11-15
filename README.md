@@ -27,6 +27,8 @@ python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/
 
 ![image](https://user-images.githubusercontent.com/81003470/111890820-5ea04080-8a41-11eb-8fea-daf0a551bf07.png)
 
+# Download Resources
+
 Note: if there's issues with converting the weights to h5 use this yolo weights in the interim: https://drive.google.com/file/d/1_0UFHgqPFZf54InU9rI-JkWHucA4tKgH/view?usp=sharing
 
 goto Google drive for large files and specifically the osrs cow and goblin weighted file: https://drive.google.com/folderview?id=1P6GlRSMuuaSPfD2IUA7grLTu4nEgwN8D
