@@ -72,5 +72,5 @@ cd scripts
 activate.bat
 
 https://user-images.githubusercontent.com/81003470/147396549-2a40e819-535c-41e6-8809-e6efdd4a1d0c.mp4
-- while using the pip -r requirements and still get the error: cannot import name 'batchnormalization' from 'keras.layers.normalization
+- while using the pip -r requirements and still get the error: cannot import name 'batchnormalization' from 'keras.layers.normalization -
 download this and save to model_data folder https://drive.google.com/file/d/1_0UFHgqPFZf54InU9rI-JkWHucA4tKgH/view?usp=sharing. 
