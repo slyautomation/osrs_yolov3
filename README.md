@@ -79,8 +79,11 @@ download this and save to model_data folder https://drive.google.com/file/d/1_0U
 ### Resolving Batchnormalisation error
 this is the error log for batchnormalisation: https://github.com/slyautomation/osrs_yolov3/blob/main/error_log%20batchnormalization.txt
 this is caused by having an incompatiable version of tensorflow. the version needed is 1.15.0
+
 pip install --upgrade tensorflow==1.15.0
+
 since keras has been updated but will still cause the batchnomralisation error, downgrade keras in the same way to 2.2.4:
+
 pip install --upgrade keras==2.2.4
 
 refer to successful log of python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
