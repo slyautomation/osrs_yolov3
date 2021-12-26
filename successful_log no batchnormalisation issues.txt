@@ -1,0 +1,989 @@
+(venv) C:\Users\i7 8700\PycharmProjects\osrs_yolov3>pip install --upgrade tensorflow==1.15.0
+Collecting tensorflow==1.15.0
+  Using cached tensorflow-1.15.0-cp37-cp37m-win_amd64.whl (295.1 MB)
+Requirement already satisfied: six>=1.10.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (1.14.0)
+Requirement already satisfied: absl-py>=0.7.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (0.9.0)
+Requirement already satisfied: opt-einsum>=2.3.2 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (3.2.0)
+Requirement already satisfied: grpcio>=1.8.6 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (1.28.1)
+Requirement already satisfied: astor>=0.6.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (0.8.1)
+Requirement already satisfied: gast==0.2.2 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (0.2.2)
+Collecting tensorflow-estimator==1.15.1
+  Using cached tensorflow_estimator-1.15.1-py2.py3-none-any.whl (503 kB)
+Requirement already satisfied: termcolor>=1.1.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (1.1.0)
+Requirement already satisfied: protobuf>=3.6.1 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (3.11.3)
+Requirement already satisfied: wrapt>=1.11.1 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (1.12.1)
+Requirement already satisfied: keras-applications>=1.0.8 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (
+1.0.8)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0)
+(1.1.2)
+Collecting tensorboard<1.16.0,>=1.15.0
+  Using cached tensorboard-1.15.0-py3-none-any.whl (3.8 MB)
+Requirement already satisfied: google-pasta>=0.1.6 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (0.2.0)
+
+Requirement already satisfied: numpy<2.0,>=1.16.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (1.18.2)
+
+Requirement already satisfied: wheel>=0.26 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorflow==1.15.0) (0.36.2)
+Requirement already satisfied: h5py in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras-applications>=1.0.8->tensorflow==1.1
+5.0) (2.10.0)
+Requirement already satisfied: setuptools in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from protobuf>=3.6.1->tensorflow==1.15.0)
+ (57.0.0)
+Requirement already satisfied: markdown>=2.6.8 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorboard<1.16.0,>=1.15.0->te
+nsorflow==1.15.0) (3.2.1)
+Requirement already satisfied: werkzeug>=0.11.15 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from tensorboard<1.16.0,>=1.15.0->
+tensorflow==1.15.0) (1.0.1)
+Installing collected packages: tensorflow-estimator, tensorboard, tensorflow
+  Attempting uninstall: tensorflow-estimator
+    Found existing installation: tensorflow-estimator 2.7.0
+    Uninstalling tensorflow-estimator-2.7.0:
+      Successfully uninstalled tensorflow-estimator-2.7.0
+  Attempting uninstall: tensorboard
+    Found existing installation: tensorboard 2.7.0
+    Uninstalling tensorboard-2.7.0:
+      Successfully uninstalled tensorboard-2.7.0
+  Attempting uninstall: tensorflow
+    Found existing installation: tensorflow 2.7.0
+    Uninstalling tensorflow-2.7.0:
+      Successfully uninstalled tensorflow-2.7.0
+Successfully installed tensorboard-1.15.0 tensorflow-1.15.0 tensorflow-estimator-1.15.1
+
+(venv) C:\Users\i7 8700\PycharmProjects\osrs_yolov3>pip freeze
+absl-py==0.9.0
+argcomplete==1.12.3
+argon2-cffi==21.1.0
+astor==0.8.1
+astunparse==1.6.3
+attrs==21.2.0
+backcall==0.2.0
+bleach==4.1.0
+cached-property==1.5.2
+cachetools==4.2.2
+certifi==2021.5.30
+cffi==1.14.6
+charset-normalizer==2.0.4
+clang==5.0
+colorama==0.4.4
+contextlib2==21.6.0
+cycler==0.10.0
+Cython==0.29.24
+debugpy==1.4.1
+decorator==5.0.9
+defusedxml==0.7.1
+docutils==0.17.1
+entrypoints==0.3
+flatbuffers==1.12
+gast==0.2.2
+google-auth==1.35.0
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+grpcio==1.28.1
+h5py==2.10.0
+idna==3.2
+importlib-metadata==4.8.1
+ipykernel==6.3.1
+ipython==7.27.0
+ipython-genutils==0.2.0
+ipywidgets==7.6.4
+jedi==0.18.0
+Jinja2==3.0.1
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==7.0.2
+jupyter-console==6.4.0
+jupyter-core==4.7.1
+jupyterlab-pygments==0.1.2
+jupyterlab-widgets==1.0.1
+keras==2.7.0
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+keyring==23.1.0
+kiwisolver==1.2.0
+libclang==12.0.0
+lxml==4.6.3
+Markdown==3.2.1
+MarkupSafe==2.0.1
+matplotlib==3.2.1
+matplotlib-inline==0.1.2
+mistune==0.8.4
+MouseInfo==0.1.3
+mss==5.0.0
+nbclient==0.5.4
+nbconvert==6.1.0
+nbformat==5.1.3
+nest-asyncio==1.5.1
+notebook==6.4.3
+numpy==1.18.2
+oauthlib==3.1.1
+opencv-python==4.2.0.34
+opt-einsum==3.2.0
+packaging==21.0
+pandocfilters==1.4.3
+parso==0.8.2
+pickleshare==0.7.5
+Pillow==7.1.1
+pkginfo==1.7.1
+prometheus-client==0.11.0
+prompt-toolkit==3.0.20
+protobuf==3.11.3
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+PyAutoGUI==0.9.50
+pycparser==2.20
+PyGetWindow==0.0.8
+Pygments==2.10.0
+PyMsgBox==1.0.8
+pyparsing==2.4.6
+pyperclip==1.8.0
+PyRect==0.1.4
+pyrsistent==0.18.0
+PyScreeze==0.1.26
+python-dateutil==2.8.1
+PyTweening==1.0.3
+pywin32==301
+pywin32-ctypes==0.2.0
+pywinpty==1.1.4
+PyYAML==5.3.1
+pyzmq==22.2.1
+qtconsole==5.1.1
+QtPy==1.11.0
+readme-renderer==29.0
+requests==2.26.0
+requests-oauthlib==1.3.0
+requests-toolbelt==0.9.1
+rfc3986==1.5.0
+rsa==4.7.2
+scipy==1.4.1
+Send2Trash==1.8.0
+six==1.14.0
+tensorboard==1.15.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorflow==1.15.0
+tensorflow-estimator==1.15.1
+tensorflow-gpu==1.15.0
+tensorflow-io-gcs-filesystem==0.23.1
+tensorflow-object-detection-api==0.1.1
+termcolor==1.1.0
+terminado==0.11.1
+testpath==0.5.0
+tornado==6.1
+tqdm==4.62.2
+traitlets==5.1.0
+twine==3.4.2
+typing-extensions==3.7.4.3
+urllib3==1.26.6
+wcwidth==0.2.5
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+wrapt==1.12.1
+zipp==3.5.0
+
+(venv) C:\Users\i7 8700\PycharmProjects\osrs_yolov3>pip install --upgrade keras==2.2.4
+Collecting keras==2.2.4
+  Using cached Keras-2.2.4-py2.py3-none-any.whl (312 kB)
+Requirement already satisfied: scipy>=0.14 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (1.4.1)
+Requirement already satisfied: h5py in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (2.10.0)
+Requirement already satisfied: keras-applications>=1.0.6 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (1.0.8)
+
+Requirement already satisfied: six>=1.9.0 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (1.14.0)
+Requirement already satisfied: pyyaml in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (5.3.1)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (1.1.2
+)
+Requirement already satisfied: numpy>=1.9.1 in c:\users\i7 8700\pycharmprojects\osrs_yolov3\venv\lib\site-packages (from keras==2.2.4) (1.18.2)
+Installing collected packages: keras
+  Attempting uninstall: keras
+    Found existing installation: keras 2.7.0
+    Uninstalling keras-2.7.0:
+      Successfully uninstalled keras-2.7.0
+Successfully installed keras-2.2.4
+
+(venv) C:\Users\i7 8700\PycharmProjects\osrs_yolov3>python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
+Using TensorFlow backend.
+2021-12-27 10:44:26.051707: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+Loading weights.
+Weights Header:  0 2 0 [32013312]
+Parsing Darknet config.
+Creating Keras model.
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:74: The name tf.get_default
+_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:517: The name tf.placeholde
+r is deprecated. Please use tf.compat.v1.placeholder instead.
+
+Parsing section net_0
+Parsing section convolutional_0
+conv2d bn leaky (3, 3, 3, 32)
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:4138: The name tf.random_un
+iform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:174: The name tf.get_defaul
+t_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:181: The name tf.ConfigProt
+o is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:186: The name tf.Session is
+ deprecated. Please use tf.compat.v1.Session instead.
+
+2021-12-27 10:44:27.936809: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compile
+d to use: AVX2
+2021-12-27 10:44:27.944495: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-12-27 10:44:28.004491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties:
+name: NVIDIA GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7085
+pciBusID: 0000:09:00.0
+2021-12-27 10:44:28.004748: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+2021-12-27 10:44:28.309414: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_100.dll
+2021-12-27 10:44:28.627249: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_100.dll
+2021-12-27 10:44:28.662819: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_100.dll
+2021-12-27 10:44:28.994315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_100.dll
+2021-12-27 10:44:29.303214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_100.dll
+2021-12-27 10:44:29.636071: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-12-27 10:44:29.636249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-12-27 10:44:30.368896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-12-27 10:44:30.368995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0
+2021-12-27 10:44:30.369299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N
+2021-12-27 10:44:30.369777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:
+0 with 4848 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1060 6GB, pci bus id: 0000:09:00.0, compute capability: 6.1)
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:190: The name tf.global_var
+iables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:199: The name tf.is_variabl
+e_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:206: The name tf.variables_
+initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:1834: The name tf.nn.fused_
+batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:133: The name tf.placeholde
+r_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+Parsing section convolutional_1
+conv2d bn leaky (3, 3, 32, 64)
+Parsing section convolutional_2
+conv2d bn leaky (1, 1, 64, 32)
+Parsing section convolutional_3
+conv2d bn leaky (3, 3, 32, 64)
+Parsing section shortcut_0
+Parsing section convolutional_4
+conv2d bn leaky (3, 3, 64, 128)
+Parsing section convolutional_5
+conv2d bn leaky (1, 1, 128, 64)
+Parsing section convolutional_6
+conv2d bn leaky (3, 3, 64, 128)
+Parsing section shortcut_1
+Parsing section convolutional_7
+conv2d bn leaky (1, 1, 128, 64)
+Parsing section convolutional_8
+conv2d bn leaky (3, 3, 64, 128)
+Parsing section shortcut_2
+Parsing section convolutional_9
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section convolutional_10
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_11
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_3
+Parsing section convolutional_12
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_13
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_4
+Parsing section convolutional_14
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_15
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_5
+Parsing section convolutional_16
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_17
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_6
+Parsing section convolutional_18
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_19
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_7
+Parsing section convolutional_20
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_21
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_8
+Parsing section convolutional_22
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_23
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_9
+Parsing section convolutional_24
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_25
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section shortcut_10
+Parsing section convolutional_26
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section convolutional_27
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_28
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_11
+Parsing section convolutional_29
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_30
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_12
+Parsing section convolutional_31
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_32
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_13
+Parsing section convolutional_33
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_34
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_14
+Parsing section convolutional_35
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_36
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_15
+Parsing section convolutional_37
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_38
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_16
+Parsing section convolutional_39
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_40
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_17
+Parsing section convolutional_41
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_42
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section shortcut_18
+Parsing section convolutional_43
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section convolutional_44
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_45
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section shortcut_19
+Parsing section convolutional_46
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_47
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section shortcut_20
+Parsing section convolutional_48
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_49
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section shortcut_21
+Parsing section convolutional_50
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_51
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section shortcut_22
+Parsing section convolutional_52
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_53
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section convolutional_54
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_55
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section convolutional_56
+conv2d bn leaky (1, 1, 1024, 512)
+Parsing section convolutional_57
+conv2d bn leaky (3, 3, 512, 1024)
+Parsing section convolutional_58
+conv2d    linear (1, 1, 1024, 255)
+Parsing section yolo_0
+Parsing section route_0
+Parsing section convolutional_59
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section upsample_0
+WARNING:tensorflow:From C:\Users\i7 8700\PycharmProjects\osrs_yolov3\venv\lib\site-packages\keras\backend\tensorflow_backend.py:2018: The name tf.image.res
+ize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.
+
+Parsing section route_1
+Concatenating route layers: [<tf.Tensor 'up_sampling2d_1/ResizeNearestNeighbor:0' shape=(?, ?, ?, 256) dtype=float32>, <tf.Tensor 'add_19/add:0' shape=(?,
+?, ?, 512) dtype=float32>]
+Parsing section convolutional_60
+conv2d bn leaky (1, 1, 768, 256)
+Parsing section convolutional_61
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section convolutional_62
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_63
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section convolutional_64
+conv2d bn leaky (1, 1, 512, 256)
+Parsing section convolutional_65
+conv2d bn leaky (3, 3, 256, 512)
+Parsing section convolutional_66
+conv2d    linear (1, 1, 512, 255)
+Parsing section yolo_1
+Parsing section route_2
+Parsing section convolutional_67
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section upsample_1
+Parsing section route_3
+Concatenating route layers: [<tf.Tensor 'up_sampling2d_2/ResizeNearestNeighbor:0' shape=(?, ?, ?, 128) dtype=float32>, <tf.Tensor 'add_11/add:0' shape=(?,
+?, ?, 256) dtype=float32>]
+Parsing section convolutional_68
+conv2d bn leaky (1, 1, 384, 128)
+Parsing section convolutional_69
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section convolutional_70
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_71
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section convolutional_72
+conv2d bn leaky (1, 1, 256, 128)
+Parsing section convolutional_73
+conv2d bn leaky (3, 3, 128, 256)
+Parsing section convolutional_74
+conv2d    linear (1, 1, 256, 255)
+Parsing section yolo_2
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to
+==================================================================================================
+input_1 (InputLayer)            (None, None, None, 3 0
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, None, 3 864         input_1[0][0]
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, None, None, 3 128         conv2d_1[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)       (None, None, None, 3 0           batch_normalization_1[0][0]
+__________________________________________________________________________________________________
+zero_padding2d_1 (ZeroPadding2D (None, None, None, 3 0           leaky_re_lu_1[0][0]
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, None, None, 6 18432       zero_padding2d_1[0][0]
+__________________________________________________________________________________________________
+batch_normalization_2 (BatchNor (None, None, None, 6 256         conv2d_2[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)       (None, None, None, 6 0           batch_normalization_2[0][0]
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, None, None, 3 2048        leaky_re_lu_2[0][0]
+__________________________________________________________________________________________________
+batch_normalization_3 (BatchNor (None, None, None, 3 128         conv2d_3[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)       (None, None, None, 3 0           batch_normalization_3[0][0]
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, None, None, 6 18432       leaky_re_lu_3[0][0]
+__________________________________________________________________________________________________
+batch_normalization_4 (BatchNor (None, None, None, 6 256         conv2d_4[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)       (None, None, None, 6 0           batch_normalization_4[0][0]
+__________________________________________________________________________________________________
+add_1 (Add)                     (None, None, None, 6 0           leaky_re_lu_2[0][0]
+                                                                 leaky_re_lu_4[0][0]
+__________________________________________________________________________________________________
+zero_padding2d_2 (ZeroPadding2D (None, None, None, 6 0           add_1[0][0]
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, None, None, 1 73728       zero_padding2d_2[0][0]
+__________________________________________________________________________________________________
+batch_normalization_5 (BatchNor (None, None, None, 1 512         conv2d_5[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_5 (LeakyReLU)       (None, None, None, 1 0           batch_normalization_5[0][0]
+__________________________________________________________________________________________________
+conv2d_6 (Conv2D)               (None, None, None, 6 8192        leaky_re_lu_5[0][0]
+__________________________________________________________________________________________________
+batch_normalization_6 (BatchNor (None, None, None, 6 256         conv2d_6[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_6 (LeakyReLU)       (None, None, None, 6 0           batch_normalization_6[0][0]
+__________________________________________________________________________________________________
+conv2d_7 (Conv2D)               (None, None, None, 1 73728       leaky_re_lu_6[0][0]
+__________________________________________________________________________________________________
+batch_normalization_7 (BatchNor (None, None, None, 1 512         conv2d_7[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_7 (LeakyReLU)       (None, None, None, 1 0           batch_normalization_7[0][0]
+__________________________________________________________________________________________________
+add_2 (Add)                     (None, None, None, 1 0           leaky_re_lu_5[0][0]
+                                                                 leaky_re_lu_7[0][0]
+__________________________________________________________________________________________________
+conv2d_8 (Conv2D)               (None, None, None, 6 8192        add_2[0][0]
+__________________________________________________________________________________________________
+batch_normalization_8 (BatchNor (None, None, None, 6 256         conv2d_8[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_8 (LeakyReLU)       (None, None, None, 6 0           batch_normalization_8[0][0]
+__________________________________________________________________________________________________
+conv2d_9 (Conv2D)               (None, None, None, 1 73728       leaky_re_lu_8[0][0]
+__________________________________________________________________________________________________
+batch_normalization_9 (BatchNor (None, None, None, 1 512         conv2d_9[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_9 (LeakyReLU)       (None, None, None, 1 0           batch_normalization_9[0][0]
+__________________________________________________________________________________________________
+add_3 (Add)                     (None, None, None, 1 0           add_2[0][0]
+                                                                 leaky_re_lu_9[0][0]
+__________________________________________________________________________________________________
+zero_padding2d_3 (ZeroPadding2D (None, None, None, 1 0           add_3[0][0]
+__________________________________________________________________________________________________
+conv2d_10 (Conv2D)              (None, None, None, 2 294912      zero_padding2d_3[0][0]
+__________________________________________________________________________________________________
+batch_normalization_10 (BatchNo (None, None, None, 2 1024        conv2d_10[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_10 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_10[0][0]
+__________________________________________________________________________________________________
+conv2d_11 (Conv2D)              (None, None, None, 1 32768       leaky_re_lu_10[0][0]
+__________________________________________________________________________________________________
+batch_normalization_11 (BatchNo (None, None, None, 1 512         conv2d_11[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_11 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_11[0][0]
+__________________________________________________________________________________________________
+conv2d_12 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_11[0][0]
+__________________________________________________________________________________________________
+batch_normalization_12 (BatchNo (None, None, None, 2 1024        conv2d_12[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_12 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_12[0][0]
+__________________________________________________________________________________________________
+add_4 (Add)                     (None, None, None, 2 0           leaky_re_lu_10[0][0]
+                                                                 leaky_re_lu_12[0][0]
+__________________________________________________________________________________________________
+conv2d_13 (Conv2D)              (None, None, None, 1 32768       add_4[0][0]
+__________________________________________________________________________________________________
+batch_normalization_13 (BatchNo (None, None, None, 1 512         conv2d_13[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_13 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_13[0][0]
+__________________________________________________________________________________________________
+conv2d_14 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_13[0][0]
+__________________________________________________________________________________________________
+batch_normalization_14 (BatchNo (None, None, None, 2 1024        conv2d_14[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_14 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_14[0][0]
+__________________________________________________________________________________________________
+add_5 (Add)                     (None, None, None, 2 0           add_4[0][0]
+                                                                 leaky_re_lu_14[0][0]
+__________________________________________________________________________________________________
+conv2d_15 (Conv2D)              (None, None, None, 1 32768       add_5[0][0]
+__________________________________________________________________________________________________
+batch_normalization_15 (BatchNo (None, None, None, 1 512         conv2d_15[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_15 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_15[0][0]
+__________________________________________________________________________________________________
+conv2d_16 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_15[0][0]
+__________________________________________________________________________________________________
+batch_normalization_16 (BatchNo (None, None, None, 2 1024        conv2d_16[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_16 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_16[0][0]
+__________________________________________________________________________________________________
+add_6 (Add)                     (None, None, None, 2 0           add_5[0][0]
+                                                                 leaky_re_lu_16[0][0]
+__________________________________________________________________________________________________
+conv2d_17 (Conv2D)              (None, None, None, 1 32768       add_6[0][0]
+__________________________________________________________________________________________________
+batch_normalization_17 (BatchNo (None, None, None, 1 512         conv2d_17[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_17 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_17[0][0]
+__________________________________________________________________________________________________
+conv2d_18 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_17[0][0]
+__________________________________________________________________________________________________
+batch_normalization_18 (BatchNo (None, None, None, 2 1024        conv2d_18[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_18 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_18[0][0]
+__________________________________________________________________________________________________
+add_7 (Add)                     (None, None, None, 2 0           add_6[0][0]
+                                                                 leaky_re_lu_18[0][0]
+__________________________________________________________________________________________________
+conv2d_19 (Conv2D)              (None, None, None, 1 32768       add_7[0][0]
+__________________________________________________________________________________________________
+batch_normalization_19 (BatchNo (None, None, None, 1 512         conv2d_19[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_19 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_19[0][0]
+__________________________________________________________________________________________________
+conv2d_20 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_19[0][0]
+__________________________________________________________________________________________________
+batch_normalization_20 (BatchNo (None, None, None, 2 1024        conv2d_20[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_20 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_20[0][0]
+__________________________________________________________________________________________________
+add_8 (Add)                     (None, None, None, 2 0           add_7[0][0]
+                                                                 leaky_re_lu_20[0][0]
+__________________________________________________________________________________________________
+conv2d_21 (Conv2D)              (None, None, None, 1 32768       add_8[0][0]
+__________________________________________________________________________________________________
+batch_normalization_21 (BatchNo (None, None, None, 1 512         conv2d_21[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_21 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_21[0][0]
+__________________________________________________________________________________________________
+conv2d_22 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_21[0][0]
+__________________________________________________________________________________________________
+batch_normalization_22 (BatchNo (None, None, None, 2 1024        conv2d_22[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_22 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_22[0][0]
+__________________________________________________________________________________________________
+add_9 (Add)                     (None, None, None, 2 0           add_8[0][0]
+                                                                 leaky_re_lu_22[0][0]
+__________________________________________________________________________________________________
+conv2d_23 (Conv2D)              (None, None, None, 1 32768       add_9[0][0]
+__________________________________________________________________________________________________
+batch_normalization_23 (BatchNo (None, None, None, 1 512         conv2d_23[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_23 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_23[0][0]
+__________________________________________________________________________________________________
+conv2d_24 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_23[0][0]
+__________________________________________________________________________________________________
+batch_normalization_24 (BatchNo (None, None, None, 2 1024        conv2d_24[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_24 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_24[0][0]
+__________________________________________________________________________________________________
+add_10 (Add)                    (None, None, None, 2 0           add_9[0][0]
+                                                                 leaky_re_lu_24[0][0]
+__________________________________________________________________________________________________
+conv2d_25 (Conv2D)              (None, None, None, 1 32768       add_10[0][0]
+__________________________________________________________________________________________________
+batch_normalization_25 (BatchNo (None, None, None, 1 512         conv2d_25[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_25 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_25[0][0]
+__________________________________________________________________________________________________
+conv2d_26 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_25[0][0]
+__________________________________________________________________________________________________
+batch_normalization_26 (BatchNo (None, None, None, 2 1024        conv2d_26[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_26 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_26[0][0]
+__________________________________________________________________________________________________
+add_11 (Add)                    (None, None, None, 2 0           add_10[0][0]
+                                                                 leaky_re_lu_26[0][0]
+__________________________________________________________________________________________________
+zero_padding2d_4 (ZeroPadding2D (None, None, None, 2 0           add_11[0][0]
+__________________________________________________________________________________________________
+conv2d_27 (Conv2D)              (None, None, None, 5 1179648     zero_padding2d_4[0][0]
+__________________________________________________________________________________________________
+batch_normalization_27 (BatchNo (None, None, None, 5 2048        conv2d_27[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_27 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_27[0][0]
+__________________________________________________________________________________________________
+conv2d_28 (Conv2D)              (None, None, None, 2 131072      leaky_re_lu_27[0][0]
+__________________________________________________________________________________________________
+batch_normalization_28 (BatchNo (None, None, None, 2 1024        conv2d_28[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_28 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_28[0][0]
+__________________________________________________________________________________________________
+conv2d_29 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_28[0][0]
+__________________________________________________________________________________________________
+batch_normalization_29 (BatchNo (None, None, None, 5 2048        conv2d_29[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_29 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_29[0][0]
+__________________________________________________________________________________________________
+add_12 (Add)                    (None, None, None, 5 0           leaky_re_lu_27[0][0]
+                                                                 leaky_re_lu_29[0][0]
+__________________________________________________________________________________________________
+conv2d_30 (Conv2D)              (None, None, None, 2 131072      add_12[0][0]
+__________________________________________________________________________________________________
+batch_normalization_30 (BatchNo (None, None, None, 2 1024        conv2d_30[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_30 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_30[0][0]
+__________________________________________________________________________________________________
+conv2d_31 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_30[0][0]
+__________________________________________________________________________________________________
+batch_normalization_31 (BatchNo (None, None, None, 5 2048        conv2d_31[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_31 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_31[0][0]
+__________________________________________________________________________________________________
+add_13 (Add)                    (None, None, None, 5 0           add_12[0][0]
+                                                                 leaky_re_lu_31[0][0]
+__________________________________________________________________________________________________
+conv2d_32 (Conv2D)              (None, None, None, 2 131072      add_13[0][0]
+__________________________________________________________________________________________________
+batch_normalization_32 (BatchNo (None, None, None, 2 1024        conv2d_32[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_32 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_32[0][0]
+__________________________________________________________________________________________________
+conv2d_33 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_32[0][0]
+__________________________________________________________________________________________________
+batch_normalization_33 (BatchNo (None, None, None, 5 2048        conv2d_33[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_33 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_33[0][0]
+__________________________________________________________________________________________________
+add_14 (Add)                    (None, None, None, 5 0           add_13[0][0]
+                                                                 leaky_re_lu_33[0][0]
+__________________________________________________________________________________________________
+conv2d_34 (Conv2D)              (None, None, None, 2 131072      add_14[0][0]
+__________________________________________________________________________________________________
+batch_normalization_34 (BatchNo (None, None, None, 2 1024        conv2d_34[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_34 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_34[0][0]
+__________________________________________________________________________________________________
+conv2d_35 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_34[0][0]
+__________________________________________________________________________________________________
+batch_normalization_35 (BatchNo (None, None, None, 5 2048        conv2d_35[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_35 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_35[0][0]
+__________________________________________________________________________________________________
+add_15 (Add)                    (None, None, None, 5 0           add_14[0][0]
+                                                                 leaky_re_lu_35[0][0]
+__________________________________________________________________________________________________
+conv2d_36 (Conv2D)              (None, None, None, 2 131072      add_15[0][0]
+__________________________________________________________________________________________________
+batch_normalization_36 (BatchNo (None, None, None, 2 1024        conv2d_36[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_36 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_36[0][0]
+__________________________________________________________________________________________________
+conv2d_37 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_36[0][0]
+__________________________________________________________________________________________________
+batch_normalization_37 (BatchNo (None, None, None, 5 2048        conv2d_37[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_37 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_37[0][0]
+__________________________________________________________________________________________________
+add_16 (Add)                    (None, None, None, 5 0           add_15[0][0]
+                                                                 leaky_re_lu_37[0][0]
+__________________________________________________________________________________________________
+conv2d_38 (Conv2D)              (None, None, None, 2 131072      add_16[0][0]
+__________________________________________________________________________________________________
+batch_normalization_38 (BatchNo (None, None, None, 2 1024        conv2d_38[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_38 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_38[0][0]
+__________________________________________________________________________________________________
+conv2d_39 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_38[0][0]
+__________________________________________________________________________________________________
+batch_normalization_39 (BatchNo (None, None, None, 5 2048        conv2d_39[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_39 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_39[0][0]
+__________________________________________________________________________________________________
+add_17 (Add)                    (None, None, None, 5 0           add_16[0][0]
+                                                                 leaky_re_lu_39[0][0]
+__________________________________________________________________________________________________
+conv2d_40 (Conv2D)              (None, None, None, 2 131072      add_17[0][0]
+__________________________________________________________________________________________________
+batch_normalization_40 (BatchNo (None, None, None, 2 1024        conv2d_40[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_40 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_40[0][0]
+__________________________________________________________________________________________________
+conv2d_41 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_40[0][0]
+__________________________________________________________________________________________________
+batch_normalization_41 (BatchNo (None, None, None, 5 2048        conv2d_41[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_41 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_41[0][0]
+__________________________________________________________________________________________________
+add_18 (Add)                    (None, None, None, 5 0           add_17[0][0]
+                                                                 leaky_re_lu_41[0][0]
+__________________________________________________________________________________________________
+conv2d_42 (Conv2D)              (None, None, None, 2 131072      add_18[0][0]
+__________________________________________________________________________________________________
+batch_normalization_42 (BatchNo (None, None, None, 2 1024        conv2d_42[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_42 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_42[0][0]
+__________________________________________________________________________________________________
+conv2d_43 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_42[0][0]
+__________________________________________________________________________________________________
+batch_normalization_43 (BatchNo (None, None, None, 5 2048        conv2d_43[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_43 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_43[0][0]
+__________________________________________________________________________________________________
+add_19 (Add)                    (None, None, None, 5 0           add_18[0][0]
+                                                                 leaky_re_lu_43[0][0]
+__________________________________________________________________________________________________
+zero_padding2d_5 (ZeroPadding2D (None, None, None, 5 0           add_19[0][0]
+__________________________________________________________________________________________________
+conv2d_44 (Conv2D)              (None, None, None, 1 4718592     zero_padding2d_5[0][0]
+__________________________________________________________________________________________________
+batch_normalization_44 (BatchNo (None, None, None, 1 4096        conv2d_44[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_44 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_44[0][0]
+__________________________________________________________________________________________________
+conv2d_45 (Conv2D)              (None, None, None, 5 524288      leaky_re_lu_44[0][0]
+__________________________________________________________________________________________________
+batch_normalization_45 (BatchNo (None, None, None, 5 2048        conv2d_45[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_45 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_45[0][0]
+__________________________________________________________________________________________________
+conv2d_46 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_45[0][0]
+__________________________________________________________________________________________________
+batch_normalization_46 (BatchNo (None, None, None, 1 4096        conv2d_46[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_46 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_46[0][0]
+__________________________________________________________________________________________________
+add_20 (Add)                    (None, None, None, 1 0           leaky_re_lu_44[0][0]
+                                                                 leaky_re_lu_46[0][0]
+__________________________________________________________________________________________________
+conv2d_47 (Conv2D)              (None, None, None, 5 524288      add_20[0][0]
+__________________________________________________________________________________________________
+batch_normalization_47 (BatchNo (None, None, None, 5 2048        conv2d_47[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_47 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_47[0][0]
+__________________________________________________________________________________________________
+conv2d_48 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_47[0][0]
+__________________________________________________________________________________________________
+batch_normalization_48 (BatchNo (None, None, None, 1 4096        conv2d_48[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_48 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_48[0][0]
+__________________________________________________________________________________________________
+add_21 (Add)                    (None, None, None, 1 0           add_20[0][0]
+                                                                 leaky_re_lu_48[0][0]
+__________________________________________________________________________________________________
+conv2d_49 (Conv2D)              (None, None, None, 5 524288      add_21[0][0]
+__________________________________________________________________________________________________
+batch_normalization_49 (BatchNo (None, None, None, 5 2048        conv2d_49[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_49 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_49[0][0]
+__________________________________________________________________________________________________
+conv2d_50 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_49[0][0]
+__________________________________________________________________________________________________
+batch_normalization_50 (BatchNo (None, None, None, 1 4096        conv2d_50[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_50 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_50[0][0]
+__________________________________________________________________________________________________
+add_22 (Add)                    (None, None, None, 1 0           add_21[0][0]
+                                                                 leaky_re_lu_50[0][0]
+__________________________________________________________________________________________________
+conv2d_51 (Conv2D)              (None, None, None, 5 524288      add_22[0][0]
+__________________________________________________________________________________________________
+batch_normalization_51 (BatchNo (None, None, None, 5 2048        conv2d_51[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_51 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_51[0][0]
+__________________________________________________________________________________________________
+conv2d_52 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_51[0][0]
+__________________________________________________________________________________________________
+batch_normalization_52 (BatchNo (None, None, None, 1 4096        conv2d_52[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_52 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_52[0][0]
+__________________________________________________________________________________________________
+add_23 (Add)                    (None, None, None, 1 0           add_22[0][0]
+                                                                 leaky_re_lu_52[0][0]
+__________________________________________________________________________________________________
+conv2d_53 (Conv2D)              (None, None, None, 5 524288      add_23[0][0]
+__________________________________________________________________________________________________
+batch_normalization_53 (BatchNo (None, None, None, 5 2048        conv2d_53[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_53 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_53[0][0]
+__________________________________________________________________________________________________
+conv2d_54 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_53[0][0]
+__________________________________________________________________________________________________
+batch_normalization_54 (BatchNo (None, None, None, 1 4096        conv2d_54[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_54 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_54[0][0]
+__________________________________________________________________________________________________
+conv2d_55 (Conv2D)              (None, None, None, 5 524288      leaky_re_lu_54[0][0]
+__________________________________________________________________________________________________
+batch_normalization_55 (BatchNo (None, None, None, 5 2048        conv2d_55[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_55 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_55[0][0]
+__________________________________________________________________________________________________
+conv2d_56 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_55[0][0]
+__________________________________________________________________________________________________
+batch_normalization_56 (BatchNo (None, None, None, 1 4096        conv2d_56[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_56 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_56[0][0]
+__________________________________________________________________________________________________
+conv2d_57 (Conv2D)              (None, None, None, 5 524288      leaky_re_lu_56[0][0]
+__________________________________________________________________________________________________
+batch_normalization_57 (BatchNo (None, None, None, 5 2048        conv2d_57[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_57 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_57[0][0]
+__________________________________________________________________________________________________
+conv2d_60 (Conv2D)              (None, None, None, 2 131072      leaky_re_lu_57[0][0]
+__________________________________________________________________________________________________
+batch_normalization_59 (BatchNo (None, None, None, 2 1024        conv2d_60[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_59 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_59[0][0]
+__________________________________________________________________________________________________
+up_sampling2d_1 (UpSampling2D)  (None, None, None, 2 0           leaky_re_lu_59[0][0]
+__________________________________________________________________________________________________
+concatenate_1 (Concatenate)     (None, None, None, 7 0           up_sampling2d_1[0][0]
+                                                                 add_19[0][0]
+__________________________________________________________________________________________________
+conv2d_61 (Conv2D)              (None, None, None, 2 196608      concatenate_1[0][0]
+__________________________________________________________________________________________________
+batch_normalization_60 (BatchNo (None, None, None, 2 1024        conv2d_61[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_60 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_60[0][0]
+__________________________________________________________________________________________________
+conv2d_62 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_60[0][0]
+__________________________________________________________________________________________________
+batch_normalization_61 (BatchNo (None, None, None, 5 2048        conv2d_62[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_61 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_61[0][0]
+__________________________________________________________________________________________________
+conv2d_63 (Conv2D)              (None, None, None, 2 131072      leaky_re_lu_61[0][0]
+__________________________________________________________________________________________________
+batch_normalization_62 (BatchNo (None, None, None, 2 1024        conv2d_63[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_62 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_62[0][0]
+__________________________________________________________________________________________________
+conv2d_64 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_62[0][0]
+__________________________________________________________________________________________________
+batch_normalization_63 (BatchNo (None, None, None, 5 2048        conv2d_64[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_63 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_63[0][0]
+__________________________________________________________________________________________________
+conv2d_65 (Conv2D)              (None, None, None, 2 131072      leaky_re_lu_63[0][0]
+__________________________________________________________________________________________________
+batch_normalization_64 (BatchNo (None, None, None, 2 1024        conv2d_65[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_64 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_64[0][0]
+__________________________________________________________________________________________________
+conv2d_68 (Conv2D)              (None, None, None, 1 32768       leaky_re_lu_64[0][0]
+__________________________________________________________________________________________________
+batch_normalization_66 (BatchNo (None, None, None, 1 512         conv2d_68[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_66 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_66[0][0]
+__________________________________________________________________________________________________
+up_sampling2d_2 (UpSampling2D)  (None, None, None, 1 0           leaky_re_lu_66[0][0]
+__________________________________________________________________________________________________
+concatenate_2 (Concatenate)     (None, None, None, 3 0           up_sampling2d_2[0][0]
+                                                                 add_11[0][0]
+__________________________________________________________________________________________________
+conv2d_69 (Conv2D)              (None, None, None, 1 49152       concatenate_2[0][0]
+__________________________________________________________________________________________________
+batch_normalization_67 (BatchNo (None, None, None, 1 512         conv2d_69[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_67 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_67[0][0]
+__________________________________________________________________________________________________
+conv2d_70 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_67[0][0]
+__________________________________________________________________________________________________
+batch_normalization_68 (BatchNo (None, None, None, 2 1024        conv2d_70[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_68 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_68[0][0]
+__________________________________________________________________________________________________
+conv2d_71 (Conv2D)              (None, None, None, 1 32768       leaky_re_lu_68[0][0]
+__________________________________________________________________________________________________
+batch_normalization_69 (BatchNo (None, None, None, 1 512         conv2d_71[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_69 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_69[0][0]
+__________________________________________________________________________________________________
+conv2d_72 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_69[0][0]
+__________________________________________________________________________________________________
+batch_normalization_70 (BatchNo (None, None, None, 2 1024        conv2d_72[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_70 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_70[0][0]
+__________________________________________________________________________________________________
+conv2d_73 (Conv2D)              (None, None, None, 1 32768       leaky_re_lu_70[0][0]
+__________________________________________________________________________________________________
+batch_normalization_71 (BatchNo (None, None, None, 1 512         conv2d_73[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_71 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_71[0][0]
+__________________________________________________________________________________________________
+conv2d_58 (Conv2D)              (None, None, None, 1 4718592     leaky_re_lu_57[0][0]
+__________________________________________________________________________________________________
+conv2d_66 (Conv2D)              (None, None, None, 5 1179648     leaky_re_lu_64[0][0]
+__________________________________________________________________________________________________
+conv2d_74 (Conv2D)              (None, None, None, 2 294912      leaky_re_lu_71[0][0]
+__________________________________________________________________________________________________
+batch_normalization_58 (BatchNo (None, None, None, 1 4096        conv2d_58[0][0]
+__________________________________________________________________________________________________
+batch_normalization_65 (BatchNo (None, None, None, 5 2048        conv2d_66[0][0]
+__________________________________________________________________________________________________
+batch_normalization_72 (BatchNo (None, None, None, 2 1024        conv2d_74[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_58 (LeakyReLU)      (None, None, None, 1 0           batch_normalization_58[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_65 (LeakyReLU)      (None, None, None, 5 0           batch_normalization_65[0][0]
+__________________________________________________________________________________________________
+leaky_re_lu_72 (LeakyReLU)      (None, None, None, 2 0           batch_normalization_72[0][0]
+__________________________________________________________________________________________________
+conv2d_59 (Conv2D)              (None, None, None, 2 261375      leaky_re_lu_58[0][0]
+__________________________________________________________________________________________________
+conv2d_67 (Conv2D)              (None, None, None, 2 130815      leaky_re_lu_65[0][0]
+__________________________________________________________________________________________________
+conv2d_75 (Conv2D)              (None, None, None, 2 65535       leaky_re_lu_72[0][0]
+==================================================================================================
+Total params: 62,001,757
+Trainable params: 61,949,149
+Non-trainable params: 52,608
+__________________________________________________________________________________________________
+None
+Saved Keras weights to model_data/yolov3.h5
+Read 62001757 of 62001757.0 from Darknet weights.
+
+(venv) C:\Users\i7 8700\PycharmProjects\osrs_yolov3>
