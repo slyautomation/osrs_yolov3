@@ -83,3 +83,5 @@ since keras has been updated but will still cause the batchnomralisation error, 
 pip install --upgrade keras==2.2.4
 
 refer to successful log of python convert.py -w model_data/yolov3.cfg model_data/yolov3.weights model_data/yolov3.h5
+
+https://github.com/slyautomation/osrs_yolov3/blob/main/successful_log%20no%20batchnormalisation%20issues.txt
