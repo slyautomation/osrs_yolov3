@@ -61,4 +61,12 @@ run voc_to_yolov3.py - this will create the images class path config file and th
 
 https://user-images.githubusercontent.com/81003470/141400168-e0bb826b-a7e4-46a4-9f09-1a3cb0a44dcd.mp4
 
-
+### Changing default terminal and generating h5 file
+Ensure you're using cmd for your terminal, by using the top tab 'file', then select 'settings'.
+using the left navigation pane select the section for 'Tools' then in the drop down select 'Terminal'.
+Within the section for Application Settings change/make sure the Shell Path: is your cmd.exe path.
+click apply then ok.
+close the project then reopen. In the terminal view type: 
+cd venv
+cd scripts
+activate.bat
