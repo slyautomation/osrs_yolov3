@@ -76,6 +76,7 @@ https://user-images.githubusercontent.com/81003470/147396549-2a40e819-535c-41e6-
 while using the pip -r requirements and still get the error: ```cannot import name 'batchnormalization' from 'keras.layers.normalization```
 download this and save to model_data folder https://drive.google.com/file/d/1_0UFHgqPFZf54InU9rI-JkWHucA4tKgH/view?usp=sharing. 
 
+### Resolving Batchnormalisation error
 this is the error log for batchnormalisation: https://github.com/slyautomation/osrs_yolov3/blob/main/error_log%20batchnormalization.txt
 this is caused by having an incompatiable version of tensorflow. the version needed is 1.15.0
 pip install --upgrade tensorflow==1.15.0
