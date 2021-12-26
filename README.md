@@ -70,5 +70,6 @@ close the project then reopen. In the terminal view type:
 cd venv
 cd scripts
 activate.bat
+
 https://user-images.githubusercontent.com/81003470/147396549-2a40e819-535c-41e6-8809-e6efdd4a1d0c.mp4
 
