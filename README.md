@@ -15,6 +15,11 @@ Download YOLOv3 weights from YOLO website. Run in Pycharm Terminal:
 
 https://pjreddie.com/media/files/yolov3.weights ----- save this in 'model_data' directory
 
+```diff
+Alternative tiny weight file uses less computing but is less accurate useful for getting quicker detection rates
+```
+https://github.com/smarthomefans/darknet-test/blob/master/yolov3-tiny.weights ----- save this in 'model_data' directory
+
 Convert the Darknet YOLO model to a Keras model.
 
 type in terminal: 
