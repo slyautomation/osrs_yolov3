@@ -48,7 +48,7 @@ cuda 10.0 = https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers
 
 cudnn = https://developer.nvidia.com/rdp/cudnn-archive#a-collapse765-10
 
-labelImg = https://tzutalin.github.io/labelImg/
+labelImg = https://github.com/heartexlabs/labelImg/releases
 
 tesseract-ocr = https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-setup-3.02.02.exe/download or for all versions: https://github.com/UB-Mannheim/tesseract/wiki
 
