@@ -1,4 +1,7 @@
-Here's an article guide for this project: https://www.slyautomation.com/blog/how-to-perform-object-detection-using-yolov3-tesseract-ocr-text-recognition-and-automating-clicks-with-pyautogui/
+Here's an article guide for this project: 
+[<img src="https://github.com/slyautomation/osrs_yolov3/assets/81003470/017fe36c-82e4-41e5-b473-61d202d53764">](https://www.slyautomation.com/blog/how-to-perform-object-detection-using-yolov3-tesseract-ocr-text-recognition-and-automating-clicks-with-pyautogui/)
+
+https://www.slyautomation.com/blog/how-to-perform-object-detection-using-yolov3-tesseract-ocr-text-recognition-and-automating-clicks-with-pyautogui/
 
 # osrs_yolov3
 Yolov3 Object Detection In OSRS using Python code, Detecting Cows - Botting
